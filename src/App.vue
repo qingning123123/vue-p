@@ -1,35 +1,44 @@
 <script setup>
-import { ref } from 'vue'
 
-const a = ref(2)
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <h1 class="tt">{{ a }}</h1>
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <button class="but but1">59s后自动取消</button>
+    <button class="but but2">下单</button>
+    <button class="but3">上传</button>
   </div>
 </template>
 
 <style scoped>
-.tt {
-  color: red;
+.but {
+  width: 166px;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 16px;
 }
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+.but1 {
+  background:  #E7E8EA;
+  color: rgba(125, 145, 157, 0.50);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.but2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #0062F8;
+  color: #FFF;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.but3 {
+  width: 72px;
+  height: 28px;
+  border-radius: 6px;
+  background: #0062F8;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 12px;
 }
+
 </style>

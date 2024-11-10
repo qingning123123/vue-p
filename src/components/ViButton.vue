@@ -1,7 +1,7 @@
 <template>
     <button :class="{but1: disabled , but2: !disabled ,but3: size === 'small', but: size !== 'small'}">
-    {{ text }}
-  </button>
+      {{ text }}
+    </button>
 </template>
 
 <script setup>

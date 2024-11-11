@@ -15,10 +15,10 @@ import Datapresent from './components/Datapresent.vue';
     <ViButton size="small" text="上传"></ViButton>
   </div>
   <div>
-    <Datapresent length="all" :background="true" lefttext="68881.9693" righttext="0.0002890"></Datapresent>
-    <Datapresent :background="true" lefttext="68881.9693" righttext="0.0002890"></Datapresent>
-    <Datapresent length="all" lefttext="68881.9693" righttext="0.0002890"></Datapresent>
-    <Datapresent lefttext="68881.9693" righttext="0.0002890"></Datapresent>
+    <Datapresent length="all" background="red" :color="true" leftText="68881.9693" rightText="0.0002890"></Datapresent>
+    <Datapresent background="red" :color="true" leftText="68881.9693" rightText="0.0002890"></Datapresent>
+    <Datapresent length="all" background="red" leftText="68881.9693" rightText="0.0002890"></Datapresent>
+    <Datapresent background="red" leftText="68881.9693" rightText="0.0002890"></Datapresent>
   </div>
 
 </template>

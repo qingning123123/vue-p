@@ -1,26 +1,27 @@
 <template>
-    <div :class="{por: true,height: true,flex: true, tap_text: true}">
-    <div :class="{
-      poa: true,height: true, tap_bgct: background, tap_bgcf: !background,
-      tap_all: length === 'all', tap_short:length !== 'all'}"> </div>
-    <p :class="{tap_leftt: background , tap_leftf: !background}">{{ lefttext }}</p>
-    <p :class="{tap_right: true}">{{ righttext }}</p>
+  <div :class="{por: true , height: true , flex: true, tap_text: true}">
+    <div
+      :class="{poa: true , height: true , tap_all: length === 'all', tap_short: length !== 'all'}"
+      :style="{background: background}"
+      >
     </div>
+    <p :class="{tap_leftt: color , tap_leftf: !color}">{{ leftText }}</p>
+    <p :class="{tap_right: true}">{{ rightText }}</p>
+  </div>
 </template>
 
 <script setup>
 defineProps({
-  length: String,
-  background: Boolean,
-  lefttext: String,
-  righttext: String,
+  length: String, //背景色长度
+  color: Boolean, //文字颜色
+  leftText: String,  //左边文字
+  rightText: String,  //右边文字
+  background:String,  //背景色颜色
 })
 
 </script>
 
 <style scoped>
-
-
 .flex {
   display: flex;
   justify-content:space-between;
@@ -30,6 +31,7 @@ defineProps({
 .por{
   position:relative;
 }
+
 .height {
   height: 22px;
 }
@@ -46,7 +48,6 @@ defineProps({
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
-
 }
 
 .tap_leftt {
@@ -61,24 +62,11 @@ defineProps({
   color: #00AF8E;
 }
 
-
-.tap_bgct {
-  background: #FCE9EB;
-
-
-}
-.tap_bgcf {
-  background: #E9F8F3;
-}
-
 .tap_all {
   width: 149px;
 }
 
 .tap_short {
   width: 10px;
-
 }
-
-
 </style>
